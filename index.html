@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人事広報の中途採用支援｜ハローワーク求人票の改善から採用ウェブページ制作まで</title>
+    <meta name="description" content="地方中小企業向けの採用支援。30分の無料相談で求人票の改善ポイントを3つお伝えします。ハローワーク求人票の改善、採用ウェブページ制作、伴走サポートで「応募が来ない」を解決。岩手・奥州を拠点に活動中。">
+
+    <!-- OGP -->
+    <meta property="og:title" content="人事広報の中途採用支援｜30分の無料相談で改善ポイントをお伝えします">
+    <meta property="og:description" content="ハローワーク求人票の改善から採用ウェブページ制作まで。地方中小企業の「応募が来ない」を解決します。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <span>人事広報の</span>
+                <a href="#">中途採用支援</a>
+            </h1>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#problems">お悩みの方へ</a></li>
+                    <li><a href="#service">2つのプラン</a></li>
+                    <li><a href="#process">進め方</a></li>
+                    <li><a href="#price">料金</a></li>
+                    <li><a href="#faq">よくある質問</a></li>
+                </ul>
+            </nav>
+            <div class="header__cta">
+                <a href="#contact" class="btn btn--header">無料相談</a>
+            </div>
+            <button class="header__hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav>
+            <ul>
+                <li><a href="#problems">お悩みの方へ</a></li>
+                <li><a href="#service">2つのプラン</a></li>
+                <li><a href="#process">進め方</a></li>
+                <li><a href="#price">料金</a></li>
+                <li><a href="#faq">よくある質問</a></li>
+                <li><a href="#contact" class="btn btn--mobile-menu">無料相談はこちら</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <p class="hero__sub">ハローワークに求人を出している社長様へ</p>
+            <h2 class="hero__title">
+                「応募が来ない」は、<br>
+                “伝わっていない”だけ<br>
+                かもしれません。
+            </h2>
+            <p class="hero__text">
+                「給料を上げないと無理か…」と諦めるその前に。<br>
+                御社の魅力を整理し、求職者に届く言葉にするお手伝いをします。<br>
+                <span class="hero__note">※採用の絶対成果を保証するものではありませんが、現状を打破する「土台」を作ります。</span>
+            </p>
+            <div class="hero__actions">
+                <a href="#contact" class="btn btn--primary btn--hero">まずは無料相談（状況整理）</a>
+                <a href="tel:090-6688-2845" class="btn btn--secondary btn--hero"><i class="icon-phone"></i> 090-6688-2845</a>
+            </div>
+            <p class="hero__micro">平日 9:00〜18:00（土日祝除く）</p>
+        </div>
+    </section>
+
+    <!-- Problems -->
+    <section id="problems" class="section section--gray">
+        <div class="container">
+            <h3 class="section__title">こんなお悩み、ありませんか？</h3>
+            <div class="problems__list">
+                <div class="problem__item">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=600&auto=format&fit=crop" alt="悩むビジネスマン">
+                    <p>ハローワークに出しているが<br><strong>応募が来ない・面接に来ない</strong></p>
+                </div>
+                <div class="problem__item">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=600&auto=format&fit=crop" alt="ミスマッチ">
+                    <p>応募はあっても<br><strong>求める人物像とズレている</strong></p>
+                </div>
+                <div class="problem__item">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=600&auto=format&fit=crop" alt="忙しい現場">
+                    <p>新しいことをやりたいが<br><strong>忙しくて手が回らない</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why -->
+    <section class="section">
+        <div class="container">
+            <h3 class="section__title">なぜ、求人票だけだと伝わらないのか</h3>
+            <div class="why__content">
+                <div class="why__text">
+                    <p class="text-lead">求職者は「安心」を求めています。</p>
+                    <p>ハローワークの求人票は仕様上、どうしても「条件（給与・時間）」の羅列になりがちです。</p>
+                    <p>しかし、今どきの求職者が本当に知りたいのは、条件の先にある<strong>「具体的な働き方」「職場の雰囲気」「どんな人がいるか」</strong>といった、入社後の暮らしのイメージです。</p>
+                    <p>この情報が不足していると、どんなに条件が良くても「不安だから応募しない」という選択をされてしまいます。</p>
+                    <div class="why__box">
+                        <p><strong>だからこそ、「情報の整理」と「受け皿（ウェブページ）」が必要です。</strong></p>
+                        <p>私たちは、御社の“言葉になっていない魅力”を引き出し、求職者が安心して応募できる状態を整えます。</p>
+                    </div>
+                </div>
+                <div class="why__img">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop" alt="打ち合わせ風景">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Structure -->
+    <section id="service" class="section section--bg-accent">
+        <div class="container">
+            <h3 class="section__title">2段階の支援サービス</h3>
+            <p class="section__desc">
+                いきなり高額な契約はいただきません。<br>
+                まずは「土台」を作り、必要であれば「運用」をサポートする明確な構成です。
+            </p>
+
+            <!-- Plan 1 -->
+            <div class="plan-card">
+                <div class="plan-card__header">
+                    <span class="plan-card__label">Step 1</span>
+                    <h4>まずはここから<br>採用の土台を整える</h4>
+                    <p class="plan-card__price">一式 <strong>15</strong>万円 <span class="tax">（税別）</span></p>
+                </div>
+                <div class="plan-card__body">
+                    <p class="plan-card__lead">採用活動の“準備”を完了させ、応募の入口を作ります。</p>
+                    <div class="plan-card__lists">
+                        <div class="list-group">
+                            <p class="list-title">【含むもの】</p>
+                            <ul>
+                                <li>現状ヒアリング＆採用要件の整理</li>
+                                <li>ハローワーク求人票の文章作成・改善</li>
+                                <li>採用ウェブページ（1ページ）の構成・制作 <span class="note">※スマホ対応</span></li>
+                                <li>応募導線の整備（フォーム設置など）</li>
+                                <li>面接質問案の作成（ミスマッチ防止）</li>
+                            </ul>
+                        </div>
+                        <div class="list-group list-group--exclude">
+                            <p class="list-title">【含まないもの】</p>
+                            <ul>
+                                <li>有料広告の運用費</li>
+                                <li>プロカメラマンによる撮影（素材提供をお願いします）</li>
+                                <li>応募者対応の代行</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow-down">▼ 必要に応じて継続 ▼</div>
+
+            <!-- Plan 2 -->
+            <div class="plan-card plan-card--secondary">
+                <div class="plan-card__header">
+                    <span class="plan-card__label">Step 2</span>
+                    <h4>出して終わりにしない<br>改善伴走サポート</h4>
+                    <p class="plan-card__price">月額 <strong>5</strong>万円 <span class="tax">（税別）</span> <span class="duration">× 3ヶ月</span></p>
+                </div>
+                <div class="plan-card__body">
+                    <p class="plan-card__lead">ハローワークを使い切り、反応を見ながら修正を繰り返します。</p>
+                    <div class="plan-card__lists">
+                        <div class="list-group">
+                            <p class="list-title">【ご支援内容】</p>
+                            <ul>
+                                <li>ハローワーク「求職者へのダイレクトメール(DM)」送付支援</li>
+                                <li>求人票の修正・反応分析（月1回程度）</li>
+                                <li>月1回のWEBミーティング（30分）で状況確認</li>
+                            </ul>
+                        </div>
+                        <div class="list-group list-group--exclude">
+                            <p class="list-title">【含まないもの】</p>
+                            <ul>
+                                <li>「必ず採用できる」という成果保証</li>
+                                <li>応募者との直接連絡代行</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="plan-card__note">※3ヶ月以降の継続は任意です。無理な引き止めは一切いたしません。</p>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <p>まずは現状をお聞かせください。売り込みはしません。</p>
+                <a href="#contact" class="btn btn--primary">無料相談に申し込む</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="section">
+        <div class="container">
+            <h3 class="section__title">進め方</h3>
+            <p class="section__desc">社長様のお手間は最小限に。<br>面倒な「文章作成」や「構成」はすべてこちらで代行します。</p>
+            
+            <div class="process__steps">
+                <div class="step">
+                    <div class="step__num">01</div>
+                    <h4>無料相談（ヒアリング）</h4>
+                    <p>現状の課題、欲しい人物像、会社の雰囲気をお話しください。<br>漠然としていても構いません。</p>
+                </div>
+                <div class="step">
+                    <div class="step__num">02</div>
+                    <h4>ご提案・お見積り</h4>
+                    <p>やること・やらないことを明確にした上で、正式な制作内容とスケジュールをご提示します。</p>
+                </div>
+                <div class="step">
+                    <div class="step__num">03</div>
+                    <h4>制作・求人票修正</h4>
+                    <p>私の方で原稿とページを作成します。<br>社長様には「内容の確認」だけお願いします。</p>
+                </div>
+                <div class="step">
+                    <div class="step__num">04</div>
+                    <h4>公開・運用開始</h4>
+                    <p>採用ウェブページを公開し、ハローワーク求人票を更新。<br>ここからがスタートです。</p>
+                </div>
+            </div>
+            <div class="cta-section">
+                <p>まずは無料相談で、現状の整理からはじめませんか？</p>
+                <a href="#contact" class="btn btn--primary">無料相談に申し込む</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Summary -->
+    <section id="price" class="section section--gray">
+        <div class="container">
+            <h3 class="section__title">料金シミュレーション</h3>
+            <div class="price-box">
+                <div class="price-box__row">
+                    <div class="price-box__label">① 土台を整える</div>
+                    <div class="price-box__value">15万円</div>
+                </div>
+                <div class="price-box__plus">＋</div>
+                <div class="price-box__row">
+                    <div class="price-box__label">② 3ヶ月伴走（任意）<br><span class="small">月5万×3ヶ月</span></div>
+                    <div class="price-box__value">15万円</div>
+                </div>
+                <div class="price-box__total">
+                    <span class="total-label">合計目安</span>
+                    <span class="total-value">30</span>
+                    <span class="total-unit">万円（税別）</span>
+                </div>
+                <p class="price-box__note">※「①土台整備」のみのご依頼も可能です。</p>
+            </div>
+            <div class="cta-section">
+                <p>料金や進め方について、詳しくご説明します。</p>
+                <a href="#contact" class="btn btn--primary">無料相談に申し込む</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h3 class="section__title">よくある質問</h3>
+            <div class="faq__list">
+                <div class="faq__item">
+                    <div class="faq__q">Q. 本当に採用できますか？（成果保証はありますか？）</div>
+                    <div class="faq__a">
+                        <p>申し訳ありませんが、採用の「確約」や「成果保証」はしておりません。採用は時期や相手があることだからです。<br>
+                        その代わり、私たちは「応募が来ない原因」である情報不足や導線の不備を解消し、<strong>“採用できる確率を最大化する”</strong>ための準備と改善を全力でサポートします。</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__q">Q. ハローワーク求人票もまだない状態ですが大丈夫ですか？</div>
+                    <div class="faq__a">
+                        <p>はい、問題ありません。これから作成する場合でも、どのような内容で登録すべきかのアドバイスから作成代行のサポートまで行います（提出手続き自体は御社で行っていただく必要があります）。</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__q">Q. 地方の小さな工場ですが、対応してもらえますか？</div>
+                    <div class="faq__a">
+                        <p>もちろんです。むしろ、そういった現場仕事や地域に根ざした企業様こそ、魅力が伝わっていないことが多いです。<br>キラキラした内容ではなく、御社の実直な良さが伝わる表現をご提案します。</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__q">Q. 社長が忙しく、打ち合わせの時間が取れません。</div>
+                    <div class="faq__a">
+                        <p>初回だけ1時間程度お時間をください。zoomなどでも可能です。<br>それ以降は、メールやチャット、短時間の電話などで、社長様の負担にならないよう進めさせていただきます。</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__q">Q. ハローワークの「DM（ダイレクトメール）」って何ですか？</div>
+                    <div class="faq__a">
+                        <p>ハローワークには、求職登録している方に対して企業側から直接アプローチできる「求職者への直接リクエスト」という仕組みがあります。<br>
+                        求人票を出して待つだけでなく、こちらから条件に合いそうな方へメッセージを送ることで、応募につながる可能性を高めます。<br>
+                        この施策の文面作成や送付対象の選定を、伴走プランでサポートします。</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__q">Q. 伴走プラン（3ヶ月）の途中解約はできますか？</div>
+                    <div class="faq__a">
+                        <p>はい、可能です。ただし、すでにお支払いいただいた月額費用の返金は原則としてお受けしておりません。<br>
+                        「続けるかどうか迷っている」という場合は、月1回のミーティングでご相談いただければ、無理に継続をお勧めすることはありません。<br>
+                        まずは①の土台整備だけでスタートし、必要に応じて伴走を検討いただく形でも問題ありません。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-section">
+                <p>ご不明な点があれば、お気軽にご相談ください。</p>
+                <a href="#contact" class="btn btn--primary">無料相談に申し込む</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile -->
+    <section id="profile" class="section section--gray">
+        <div class="container">
+            <h3 class="section__title">運営者について</h3>
+            <div class="profile">
+                <div class="profile__img">
+                    <img src="unei.jpg" alt="千葉雄大">
+                </div>
+                <div class="profile__content">
+                    <p class="profile__name">千葉 雄大</p>
+                    <p class="profile__text">
+                        地方の中小企業（5〜30名規模）を中心に、<br>
+                        採用・広報・業務効率化を「現場で使える形」に整える支援を行っています。
+                    </p>
+                    <p class="profile__text">これまで、</p>
+                    <ul class="profile__list">
+                        <li>ハローワーク求人票の改善</li>
+                        <li>採用広報用のウェブページ・動画制作</li>
+                        <li>生成AIを活用した業務効率化支援</li>
+                    </ul>
+                    <p class="profile__text">
+                        などを通じて、「何から手をつければいいかわからない」状態の整理から伴走してきました。
+                    </p>
+                    <p class="profile__text">
+                        専門用語は使わず、実務目線で一緒に考えることを大切にしています。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--bg-dark">
+        <div class="container container--narrow">
+            <h3 class="section__title title--white">無料相談・お問い合わせ</h3>
+            <p class="contact-lead">
+                <strong style="color: #f39c12; font-size: 1.3rem;">30分の無料相談で、御社の求人票の改善ポイントを3つお伝えします。</strong><br><br>
+                「まずは話を聞いてみたい」「自社の場合はどうなるか教えてほしい」など、<br>
+                まだ依頼を決めていなくても構いません。
+            </p>
+
+            <div class="contact-methods">
+                <div class="contact-tel">
+                    <p class="tel-label">お電話でのご相談（スマホならタップ）</p>
+                    <a href="tel:090-6688-2845" class="tel-number"><i class="icon-phone"></i> 090-6688-2845</a>
+                    <p class="tel-sub">平日 9:00〜18:00</p>
+                </div>
+            </div>
+
+            <form class="contact-form" action="#" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="name">お名前 <span class="required">必須</span></label>
+                    <input type="text" id="name" name="name" required placeholder="例）山田 太郎">
+                </div>
+                <div class="form-group">
+                    <label for="phone">電話番号 <span class="required">必須</span></label>
+                    <input type="tel" id="phone" name="phone" required placeholder="例）090-1234-5678">
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス <span class="required">必須</span></label>
+                    <input type="email" id="email" name="email" required placeholder="例）info@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">ご相談内容</label>
+                    <textarea id="message" name="message" rows="5" placeholder="簡単で構いません。"></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn btn--primary btn--full">まずは無料で相談する</button>
+                    <p class="submit-note">※営業メールの送信はご遠慮ください。<br>※送信完了後、担当者より24時間以内にご連絡いたします。</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__info">
+                <p class="footer__logo">人事広報　千葉雄大</p>
+                <p>〒023-0824 岩手県奥州市水沢泉町<br>TEL: 090-6688-2845</p>
+            </div>
+            <ul class="footer__links">
+                <li><a href="legal.html#company">運営者情報</a></li>
+                <li><a href="legal.html#privacy">プライバシーポリシー</a></li>
+                <li><a href="legal.html#tokushoho">特定商取引法に基づく表記</a></li>
+            </ul>
+            <p class="footer__copyright">&copy; HRPR All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Global Sticky Footer (Mobile) -->
+    <div class="sticky-footer">
+        <a href="tel:090-6688-2845" class="sticky-footer__btn sticky-footer__btn--tel">
+            <span>電話で相談</span>
+        </a>
+        <a href="#contact" class="sticky-footer__btn sticky-footer__btn--mail">
+            <span>Webで相談</span>
+        </a>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="トップへ戻る">↑</a>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
