@@ -873,6 +873,156 @@ h1, h2, h3, h4 {
     }
 }
 
+/* Hero Benefit Box */
+.hero__benefit {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.hero__benefit p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Approach Section */
+.approach__list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.approach__item {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.approach__num {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: var(--color-secondary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.approach__content h4 {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+}
+
+.approach__content p {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+/* CTA Box (in Approach Section) */
+.cta-box {
+    background: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.cta-box__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.cta-box__text {
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* CTA Section Benefit */
+.cta-section__benefit {
+    color: var(--color-secondary);
+    font-weight: 500;
+    margin: 10px 0 20px;
+}
+
+/* Contact Benefit & Reassurance */
+.contact-benefit,
+.contact-reassurance {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.contact-benefit {
+    border: 2px solid var(--color-accent);
+}
+
+.contact-reassurance {
+    border: 2px solid var(--color-secondary);
+}
+
+.contact-benefit__title,
+.contact-reassurance__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-benefit__title {
+    color: var(--color-accent);
+}
+
+.contact-reassurance__title {
+    color: var(--color-secondary);
+}
+
+.contact-benefit__list,
+.contact-reassurance__list {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-benefit__list li,
+.contact-reassurance__list li {
+    margin-bottom: 10px;
+    padding-left: 1.5em;
+    position: relative;
+    list-style: none;
+}
+
+.contact-benefit__list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+}
+
+.contact-reassurance__list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .header__nav, .header__cta {
@@ -903,8 +1053,34 @@ h1, h2, h3, h4 {
     .sticky-footer {
         display: flex;
     }
-    
+
     .back-to-top {
         bottom: 80px; /* Above sticky footer */
+    }
+
+    .approach__item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .approach__num {
+        margin: 0 auto 15px;
+    }
+
+    .hero__benefit {
+        padding: 15px 20px;
+    }
+
+    .hero__benefit p {
+        font-size: 1rem;
+    }
+
+    .cta-box {
+        padding: 30px 20px;
+    }
+
+    .contact-benefit,
+    .contact-reassurance {
+        padding: 20px;
     }
 }
